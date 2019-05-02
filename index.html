@@ -74,6 +74,7 @@
       .lead {
         color: rgba(14,30,37,.87);
         font-weight: 500;
+        margin-bottom: 1em;
       }
       .card {
         background-color: #fff;
@@ -159,6 +160,14 @@
       .footer div {
         margin-bottom: 1em;
       }
+      .footer .links {
+        display: flex;
+      }
+      @media (max-width: 400px) {
+        .footer .links {
+          flex-direction: column;
+        }
+      }
       .footer a {
         background: 0 0;
         border-radius: 4px;
@@ -217,8 +226,9 @@
     <footer class="footer">
       <div class="container">
         <div class="links">
-          <a rel="noopener noreferrer" href="https://github.com/authereum">Github</a>
-          <a rel="noopener noreferrer" href="https://twitter.com/authereum">Twitter</a>
+          <a rel="noopener noreferrer" target="_blank" href="https://github.com/authereum">Github</a>
+          <a rel="noopener noreferrer" target="_blank" href="https://twitter.com/authereum">Twitter</a>
+          <a rel="noopener noreferrer" target="_blank" href="https://t.me/authereum">Telegram</a>
         </div>
         <small>© 2019 Authereum</small>
       </div>
