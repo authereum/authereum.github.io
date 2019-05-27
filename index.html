@@ -9,7 +9,7 @@
     <meta name="googlebot" content="index,follow">
     <meta name="application-name" content="Authereum">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=yes">
-    <link rel="shortcut icon" href="/favicon.ico"/>
+    <link rel="shortcut icon" href="/favicon.png"/>
     <link rel="canonical" href="https://authereum.org/">
     <title>Authereum — Authentication on Ethereum</title>
     <style>
@@ -44,9 +44,16 @@
       .logo {
         max-width: 175px;
       }
+      .text {
+        max-width: 280px;
+        background: #fff;
+      }
       @media(max-width: 400px) {
         .logo {
-          max-width: 100px;
+          max-width: 120px;
+        }
+        .text {
+          max-width: 200px;
         }
       }
       h1 {
@@ -121,7 +128,7 @@
         font-weight: 500;
       }
       .subscribe input[type="submit"] {
-        background: #f76f50;
+        background: #FF4C2F;
         border: 0;
         border-radius: 4px;
         box-shadow: 0 0 0 1px rgba(255,255,255,.1), 0 2px 4px 0 rgba(14,30,37,.12);
@@ -148,7 +155,7 @@
         z-index: 1;
       }
       .subscribe input[type="submit"]:hover {
-        background: #ff8f75;
+        background: #ff5f45;
       }
       .footer {
         color: #717e82;
@@ -202,8 +209,8 @@
   </head>
   <body>
     <div class="hero">
-      <img class="logo" src="assets/authereum.png" alt="logo" />
-      <h1>Authereum</h1>
+      <img class="logo" src="assets/logo.svg" alt="logo" />
+      <h1><img class="text" src="assets/text.png" alt="Authereum" /></h1>
       <p class="tagline">Authentication on Ethereum</p>
     </div>
 
