@@ -21,6 +21,10 @@
 
       @keyframes strokeShield {
         0% {
+          opacity: 0;
+        }
+        30% {
+          opacity: 1;
         }
         50% {
           stroke-dashoffset: 0;
@@ -44,6 +48,10 @@
 
       @keyframes strokeText {
         0% {
+          opacity: 0;
+        }
+        30% {
+          opacity: 1;
         }
         50% {
           stroke-dashoffset: 0;
@@ -75,6 +83,15 @@
         }
       }
 
+      @keyframes transitionUp {
+        0% {
+
+        }
+        100% {
+          transform: translate(0, 0);
+        }
+      }
+
       .path {
         fill: none;
         stroke: none;
@@ -82,26 +99,30 @@
         stroke-linecap: round;
       }
       .one {
-        animation: strokeShield 5s linear forwards, fillShield 1s linear forwards 1s;
+        animation: strokeShield 6s ease-in forwards 0.2s, fillShield 2s linear forwards 1.8s;
         stroke-dasharray: 3000;
         stroke-dashoffset: 3000;
         stroke: #ff4c2e;
       }
       .two {
-        animation: strokeShield 4s linear forwards 0.2s, fillShield 1s linear forwards 1s;
+        animation: strokeShield 5s ease-in forwards 0.2s, fillShield 2s linear forwards 1.8s;
         stroke-dasharray: 1000;
         stroke-dashoffset: 1000;
         stroke: #ff4c2e;
       }
       .three {
-        animation: strokeShield 5s linear forwards 0.5s, fillShield 1s linear forwards 1s;
+        animation: strokeShield 6s ease-in forwards 0.2s, fillShield 2s linear forwards 1.8s;
         stroke-dasharray: 1000;
         stroke-dashoffset: 1000;
         stroke: #ff4c2e;
       }
 
+      .logo svg {
+        transform: translate(0, 10px);
+        animation: transitionUp 3s ease-out forwards 1.8s;
+      }
       .svg_text {
-        animation: strokeText 4s linear forwards, fillText 1s linear forwards 1s;
+        animation: strokeText 4s ease-in forwards 1s, fillText 1.5s linear forwards 2s;
         stroke-dasharray: 1000;
         stroke-dashoffset: 1000;
         fill: none;
@@ -111,9 +132,9 @@
       }
 
       .fadeIn {
-        transform: translate(0, 10px);
+        transform: translate(0, 0.1em);
         opacity: 0;
-        animation: fadeIn 0.4s ease-out forwards 1s;
+        animation: fadeIn 1s ease-out forwards 2s;
       }
 
       body {
