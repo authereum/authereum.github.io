@@ -5,3 +5,4 @@
  X-Content-Type-Options: nosniff
  Strict-Transport-Security: max-age=2592000; includeSubDomains; preload
  Feature-Policy: vibrate 'none'; geolocation 'none'; midi 'none'; notifications 'none'; push 'none'; sync-xhr 'none'; microphone 'none'; camera 'none'; magnetometer 'none'; gyroscope 'none'; speaker 'none'; vibrate 'none'; fullscreen 'none'; payment 'none'
+  Content-Security-Policy: default-src 'none'; object-src 'none'; img-src * 'unsafe-inline'; script-src * 'unsafe-inline'; style-src 'self'; font-src 'self';
