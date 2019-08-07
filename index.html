@@ -200,6 +200,24 @@
         text-align: center;
         font-size: 0.7em;
       }
+      .demo {
+        color: #7f8288;
+        text-align: center;
+      }
+      .demo .button {
+        font-size: 1.2em;
+      }
+      .demo p {
+        margin-top: 0.3em;
+        font-size: 0.8em;
+      }
+      .link {
+        color: #fe4c2e;
+        text-decoration: none;
+      }
+      .link:hover {
+        text-decoration: underline;
+      }
       .subscribe {
         padding: 4em 1em;
         display: flex;
@@ -261,6 +279,7 @@
         color: rgba(14,30,37,.54);
         font-weight: 500;
       }
+      .button,
       .subscribe input[type="submit"] {
         background: #FF4C2F;
         border: 0;
@@ -288,6 +307,7 @@
         vertical-align: middle;
         z-index: 1;
       }
+      .button:hover,
       .subscribe input[type="submit"]:hover {
         background: #ff5f45;
       }
@@ -384,12 +404,25 @@
     </h1>
     <div class="fadeIn">
       <p class="tagline">Authentication on Ethereum</p>
-      <i class="comingsoon">Coming soon</i>
+      <i class="comingsoon">Coming soon to mainnet</i>
     </div>
 
     </div>
 
     <div class="fadeIn">
+      <div class="demo">
+        <div>
+          <a
+            class="button"
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://uniswap.demo.authereum.org">
+              Try Demo on Kovan
+          </a>
+          <p>Connect with Authereum</p>
+        </div>
+      </div>
+
       <div class="subscribe" id="mc_embed_signup">
         <div class="card">
           <form action="https://gmail.us20.list-manage.com/subscribe/post?u=b06498439e065e59e64e57249&amp;id=1db58233ef" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
